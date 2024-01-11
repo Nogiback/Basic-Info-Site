@@ -6,7 +6,7 @@ This is the first project of the NodeJS course under the Fullstack Javascript De
 
 ## Demo
 
-[Check it out on Vercel!](https://the-nogi-shop.vercel.app/)
+Coming soon...
 
 ## Screenshots
 
