@@ -4,21 +4,13 @@
 
 This is the first project of the NodeJS course under the Fullstack Javascript Development curriculum for The Odin Project. The purpose of this project was to build a simple four page information site utilizing only NodeJS techniques.
 
-## Demo
-
-Coming soon...
-
-## Screenshots
-
-Coming soon...
-
 ## Built With
 
-NodeJS
+NodeJS, Javascript
 
 ## Lessons Learned
 
-Coming soon...
+This was an introduction to NodeJS and getting familiar with the backend process. I learned how to set up a simple server and how to utilize important NodeJS modules such as http, url, and fs.
 
 ## Feedback
 
