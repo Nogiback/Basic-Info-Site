@@ -42,16 +42,27 @@
 // With Express
 
 const express = require("express");
+const path = require("path");
 
 const app = express();
-const port = 8080;
-
-app.use(express.static("public"));
+const port = 8080 || process.env.PORT;
 
 app.get("/", function (req, res) {
-  res.send("Hello World!");
+  res.sendFile(path.join(__dirname, "./pages/index.html"));
+});
+
+app.get("/about", function (req, res) {
+  res.sendFile(path.join(__dirname, "./pages/about.html"));
+});
+
+app.get("/contact", function (req, res) {
+  res.sendFile(path.join(__dirname, "./pages/contact.html"));
+});
+
+app.get("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "./pages/404.html"));
 });
 
 app.listen(port, function () {
-  console.log(`Example app listening on port ${port}!`);
+  console.log(`Server started at http://localhost:${port}!`);
 });
